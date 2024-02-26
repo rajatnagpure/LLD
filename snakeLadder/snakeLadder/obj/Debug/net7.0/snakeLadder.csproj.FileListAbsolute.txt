@@ -1,0 +1,15 @@
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.csproj.AssemblyReference.cache
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.AssemblyInfoInputs.cache
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.AssemblyInfo.cs
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.csproj.CoreCompileInputs.cache
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/bin/Debug/net7.0/snakeLadder
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/bin/Debug/net7.0/snakeLadder.deps.json
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/bin/Debug/net7.0/snakeLadder.runtimeconfig.json
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/bin/Debug/net7.0/snakeLadder.dll
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/bin/Debug/net7.0/snakeLadder.pdb
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.dll
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/refint/snakeLadder.dll
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.pdb
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/snakeLadder.genruntimeconfig.cache
+/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/Debug/net7.0/ref/snakeLadder.dll
