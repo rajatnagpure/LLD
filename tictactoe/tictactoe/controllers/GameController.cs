@@ -5,32 +5,17 @@ namespace tictactoe.controllers
 {
     public class GameController
     {
-        public Game getGame(int dimension)
+        public Game getGame(int dimension, List<Player> players, bool row, bool col, bool diagonal)
         {
-            return new Game(dimension);
-        }
-        public bool addPlayer(Game game, string uName, MarkEnumeration mark)
-        {
-            Player player = new Player(uName, mark);
-            try
+            Game.Builder builder = new Game.Builder(dimension);
+            foreach(var player in players)
             {
-                game.addPlayer(player);
-            }catch(Exception ex)
-            {
-                System.Console.WriteLine(ex.Message);
-                return false;
+                builder.AddPlayer(player);
             }
-            return true;
-        }
-        public void addWinningStrategies(Game game, bool row, bool col, bool diagonal)
-        {
-            if (col) game.addColWinningStrategy();
-            if (row) game.addRowWinningStrategy();
-            if (diagonal) game.addDiagonalWinningStrategy();
-        }
-        public void startGame(Game game)
-        {
-            game.startGame();
+            if (row) builder.AddRowWinningStrategy();
+            if (col) builder.AddColWinningStrategy();
+            if (diagonal) builder.AddDiagonalWinningStrategy();
+            return builder.Build();
         }
         public void endGame(Game game)
         {

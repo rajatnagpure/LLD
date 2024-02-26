@@ -4,14 +4,12 @@ using tictactoe.controllers;
 using tictactoe.models;
 
 GameController gameController = new GameController();
-Game game = gameController.getGame(3);
 
-gameController.addPlayer(game, "Rajat", MarkEnumeration.X);
-gameController.addPlayer(game, "Bot", MarkEnumeration.O);
+List<Player> players = new List<Player>();
+players.Add(new Player("Rajat", MarkEnumeration.X));
+players.Add(new Player("Bot", MarkEnumeration.O));
+Game game = gameController.getGame(3,players,true, true, true);
 
-gameController.addWinningStrategies(game, true, true, true);
-
-gameController.startGame(game);
 gameController.printBoard(game);
 
 while (gameController.getGameStatus(game) == GameStatusEnumeration.RUNNING)

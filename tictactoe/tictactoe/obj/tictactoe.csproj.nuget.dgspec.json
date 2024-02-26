@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rajatnagpure/Projects/tictactoe/tictactoe/tictactoe.csproj": {}
+    "/Users/rajatnagpure/Projects/LLD/tictactoe/tictactoe/tictactoe.csproj": {}
   },
   "projects": {
-    "/Users/rajatnagpure/Projects/tictactoe/tictactoe/tictactoe.csproj": {
+    "/Users/rajatnagpure/Projects/LLD/tictactoe/tictactoe/tictactoe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rajatnagpure/Projects/tictactoe/tictactoe/tictactoe.csproj",
+        "projectUniqueName": "/Users/rajatnagpure/Projects/LLD/tictactoe/tictactoe/tictactoe.csproj",
         "projectName": "tictactoe",
-        "projectPath": "/Users/rajatnagpure/Projects/tictactoe/tictactoe/tictactoe.csproj",
+        "projectPath": "/Users/rajatnagpure/Projects/LLD/tictactoe/tictactoe/tictactoe.csproj",
         "packagesPath": "/Users/rajatnagpure/.nuget/packages/",
-        "outputPath": "/Users/rajatnagpure/Projects/tictactoe/tictactoe/obj/",
+        "outputPath": "/Users/rajatnagpure/Projects/LLD/tictactoe/tictactoe/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rajatnagpure/.nuget/NuGet/NuGet.Config"

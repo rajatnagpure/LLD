@@ -13,42 +13,80 @@ namespace tictactoe.models
         public Player? winner { private set; get; }
         public int moveCount { private set; get; }
         public int dimension { private set; get; }
-        public Game(int dimension)
+
+        private Game() { }
+
+        // Builder class
+        public class Builder
         {
-            board = new Board(3);
-            moveCount = 0;
-            this.dimension = dimension;
-            players = new List<Player>();
-            winningStretegies = new List<WinningStretegyInterface>();
-            gameStatus = GameStatusEnumeration.INITIALIZING;
-        }
-        public void addPlayer(Player player)
-        {
-            if (players.Exists(x => x.uName == player.uName))
-                throw new Exception("Player with same uName already exists!");
-            if (players.Exists(x => x.mark == player.mark))
-                throw new Exception("This mark is already choosen by another player!");
-            players.Add(player);
-        }
-        public void addRowWinningStrategy()
-        {
-            if (winningStretegies.Contains(new RowWinningStrategy())) return;
-            winningStretegies.Add(new RowWinningStrategy());
-        }
-        public void addColWinningStrategy()
-        {
-            if (winningStretegies.Contains(new ColWinningStrategy())) return;
-            winningStretegies.Add(new ColWinningStrategy());
-        }
-        public void addDiagonalWinningStrategy()
-        {
-            if (winningStretegies.Contains(new DiagonalWinningStrategy())) return;
-            winningStretegies.Add(new DiagonalWinningStrategy());
-        }
-        public void startGame()
-        {
-            if (gameStatus == GameStatusEnumeration.OVER) return;
-            gameStatus = GameStatusEnumeration.RUNNING;
+            private int dimension;
+            private List<Player> players;
+            private List<WinningStretegyInterface> winningStretegies;
+
+            public Builder(int dimension)
+            {
+                this.dimension = dimension;
+                this.players = new List<Player>();
+                this.winningStretegies = new List<WinningStretegyInterface>();
+            }
+
+            public Builder AddPlayer(Player player)
+            {
+                if (players.Exists(x => x.uName == player.uName))
+                    throw new Exception("Player with the same uName already exists!");
+
+                if (players.Exists(x => x.mark == player.mark))
+                    throw new Exception("This mark is already chosen by another player!");
+
+                players.Add(player);
+                return this;
+            }
+
+            public Builder AddRowWinningStrategy()
+            {
+                if (!winningStretegies.Contains(new RowWinningStrategy()))
+                    winningStretegies.Add(new RowWinningStrategy());
+
+                return this;
+            }
+
+            public Builder AddColWinningStrategy()
+            {
+                if (!winningStretegies.Contains(new ColWinningStrategy()))
+                    winningStretegies.Add(new ColWinningStrategy());
+
+                return this;
+            }
+
+            public Builder AddDiagonalWinningStrategy()
+            {
+                if (!winningStretegies.Contains(new DiagonalWinningStrategy()))
+                    winningStretegies.Add(new DiagonalWinningStrategy());
+
+                return this;
+            }
+
+            public Game Build()
+            {
+                if (dimension <= 0)
+                    throw new InvalidOperationException("Dimension must be greater than zero!");
+
+                if (players.Count < 2)
+                    throw new InvalidOperationException("At least two players are required!");
+
+                var game = new Game
+                {
+                    board = new Board(3),
+                    moveCount = 0,
+                    dimension = this.dimension,
+                    players = this.players,
+                    winningStretegies = this.winningStretegies,
+                    gameStatus = GameStatusEnumeration.INITIALIZING
+                };
+
+                game.gameStatus = GameStatusEnumeration.RUNNING;
+                return game;
+            }
         }
         public void stopGame()
         {
