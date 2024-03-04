@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{4D50103C-590A-499D-B5FE-E36AAAE116D7}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="tictactoe/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.tictactoe PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="tictactoe/models/Game.cs">
     <Files>
-      <File FileName="tictactoe/Program.cs" Line="4" Column="1" />
+      <File FileName="tictactoe/Program.cs" Line="11" Column="61" />
+      <File FileName="tictactoe/models/Game.cs" Line="53" Column="46" />
+      <File FileName="tictactoe/controllers/GameController.cs" Line="19" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="tictactoe" expanded="True">
+          <Node name="tictactoe">
             <Node name="tictactoe" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="controllers" expanded="True" />
+              <Node name="models" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.tictactoe PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
