@@ -17,28 +17,12 @@
             Floor = floor;
             ExitTime = null;
             FinalAmount = 0;
+            Payments = new List<Payment>();
         }
-        private float GetFinalAmount()
-        {
-            TimeSpan timeDiff = ((TimeSpan)(ExitTime! - EntryTime));
-            float ratePerHour = 1;
-            switch (Vehicle.VehicleType)
-            {
-                case VehicleTypeEnum.TRUCK: ratePerHour = 4;
-                    break;
-                case VehicleTypeEnum.BIKE: ratePerHour = 1;
-                    break;
-                case VehicleTypeEnum.CAR:
-                default:
-                    ratePerHour = 2;
-                    break;
-            }
-            return ratePerHour * timeDiff.Hours;
-        }
-        public void FinalizeExitVehicle()
+        public void FinalizeExitVehicle(float finalAmount)
         {
             ExitTime = DateTime.Now;
-            FinalAmount = GetFinalAmount();
+            FinalAmount = finalAmount;
         }
         public void MakePayment(Payment payment)
         {

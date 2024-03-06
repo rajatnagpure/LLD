@@ -1,6 +1,6 @@
 ﻿using ParkingLot.Models;
 
-namespace ParkingLot.Strategies
+namespace ParkingLot.Models
 {
     public interface SlotFindingStrategyInterface
     {

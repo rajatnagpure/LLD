@@ -7,18 +7,6 @@
         {
             Slots = new List<Slot>();
         }
-        public void Initialise(int numberOfslotsPerFloor, int slotStartingNumber)
-        {
-            numberOfslotsPerFloor -= 3;
-            while (numberOfslotsPerFloor <0)
-            {
-                Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.CAR));
-                numberOfslotsPerFloor--;
-            }
-            Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.TRUCK));
-            Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.BIKE));
-            Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.BIKE));
-        }
         public bool IsFloorFull()
         {
             return !Slots.Any(x => x.Filled == false);

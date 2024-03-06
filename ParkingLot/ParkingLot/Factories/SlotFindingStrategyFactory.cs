@@ -1,7 +1,7 @@
-﻿using System;
-using ParkingLot.Strategies;
+﻿using ParkingLot.Strategies;
+using ParkingLot.Models;
 
-namespace ParkingLot.Models
+namespace ParkingLot.Factories
 {
     public class SlotFindingStrategyFactory
     {
