@@ -21,6 +21,16 @@
             }
             return emptySlotByType;
         }
+        public Dictionary<VehicleTypeEnum, int> GetAllFilledSlotCount()
+        {
+            Dictionary<VehicleTypeEnum, int> emptySlotByType = new Dictionary<VehicleTypeEnum, int>();
+            foreach (var slot in Slots)
+            {
+                if (slot.Filled)
+                    emptySlotByType[slot.VehicleType]++;
+            }
+            return emptySlotByType;
+        }
         public int GetFreeSlotByType(VehicleTypeEnum vehicleType)
         {
             int count = 0;

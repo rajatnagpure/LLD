@@ -4,19 +4,19 @@ namespace ParkingLot.Repositories
 {
     public class ParkingLotRepository
     {
-        private Dictionary<long, ParkingLot.Models.ParkingLot> ParkingLots = new Dictionary<long, ParkingLot.Models.ParkingLot>();
-        public long IdCount = 0;
-
-        public long Save(ParkingLot.Models.ParkingLot parkingLot)
+        private Dictionary<string, ParkingLot.Models.ParkingLot> ParkingLots = new Dictionary<string, ParkingLot.Models.ParkingLot>();
+        public int IdCount { private set; get; }
+        public void Save(ParkingLot.Models.ParkingLot parkingLot)
         {
-            ParkingLots[IdCount++] = parkingLot;
-            return IdCount - 1;
+            if (ParkingLots.ContainsKey(parkingLot.StringId))
+                throw new InvalidOperationException("ParkingLot Id already in use!");
+            ParkingLots[parkingLot.StringId] = parkingLot;
         }
 
-        public Models.ParkingLot? GetParkingLotById(long id)
+        public Models.ParkingLot? GetParkingLotById(string stringId)
         {
-            if (!ParkingLots.ContainsKey(id)) return null;
-            return ParkingLots[id];
+            if (!ParkingLots.ContainsKey(stringId)) return null;
+            return ParkingLots[stringId];
         }
     }
 }

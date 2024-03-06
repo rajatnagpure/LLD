@@ -4,14 +4,16 @@
     {
         public int MaxFloors { private set; get; }
         public int MaxSlots { private set; get; }
+        public string StringId { private set; get; }
         public List<Floor> Floors { private set; get; }
         public SlotFindingStrategyInterface SlotFindingStrategy { private set; get; }
-        public ParkingLot(long id, int mxSlots, int mxFloors, SlotFindingStrategyInterface slotFindingStrategy, List<Floor> floors): base(id)
+        public ParkingLot(string stringId, long id, int mxSlots, int mxFloors, SlotFindingStrategyInterface slotFindingStrategy, List<Floor> floors): base(id)
         {
             MaxFloors = mxFloors;
             MaxSlots = mxSlots;
             Floors = floors;
             SlotFindingStrategy = slotFindingStrategy;
+            StringId = stringId;
         }
 
         public int GetEmptySlotByType(VehicleTypeEnum vehicleType)
@@ -34,6 +36,23 @@
             {
                 Dictionary<VehicleTypeEnum, int> dict = floor.GetAllEmptySlotCount();
                 foreach(VehicleTypeEnum type in Enum.GetValues(typeof(VehicleTypeEnum)))
+                {
+                    countDict[type] += dict[type];
+                }
+            }
+            return countDict;
+        }
+        public Dictionary<VehicleTypeEnum, int> GetOccupiedCountSlots()
+        {
+            Dictionary<VehicleTypeEnum, int> countDict = new Dictionary<VehicleTypeEnum, int>();
+            foreach (VehicleTypeEnum type in Enum.GetValues(typeof(VehicleTypeEnum)))
+            {
+                countDict[type] = 0;
+            }
+            foreach (var floor in Floors)
+            {
+                Dictionary<VehicleTypeEnum, int> dict = floor.GetAllFilledSlotCount();
+                foreach (VehicleTypeEnum type in Enum.GetValues(typeof(VehicleTypeEnum)))
                 {
                     countDict[type] += dict[type];
                 }

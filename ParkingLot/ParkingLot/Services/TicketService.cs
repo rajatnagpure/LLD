@@ -19,13 +19,13 @@ namespace ParkingLot.Services
             ParkingLotRepository = parkingLotRepository;
             PaymentService = paymentService;
         }
-        public Ticket ParkVehicle(long parkingLotId, Vehicle vehicle)
+        public long ParkVehicle(string parkingLotId, string regNum, long color, VehicleTypeEnum vehicleType)
         {
             Models.ParkingLot? parkingLot = ParkingLotRepository.GetParkingLotById(parkingLotId);
             if (parkingLot == null) throw new InvalidOperationException("Invalid ParkingLotId");
-            if(VehicleRepository.GetVehicleById(vehicle.Id) == null)
+            if(VehicleRepository.GetVehicleByRegNum(regNum) == null)
             {
-                vehicle.Id = VehicleRepository.IdCount + 1;
+                Vehicle vehicle = new Vehicle(VehicleRepository.IdCount + 1, regNum, color, vehicleType);
                 VehicleRepository.Save(vehicle);
             }
   
@@ -33,7 +33,7 @@ namespace ParkingLot.Services
             Slot? slot = null;
             foreach (var flr in parkingLot.Floors)
             {
-                long slotIdx = parkingLot.SlotFindingStrategy.EmptySlot(flr, vehicle.VehicleType);
+                long slotIdx = parkingLot.SlotFindingStrategy.EmptySlot(flr, vehicleType);
                 if (slotIdx != -1)
                 {
                     floor = flr;
@@ -42,7 +42,9 @@ namespace ParkingLot.Services
                 }
             }
             if (floor == null || slot == null) throw new InvalidOperationException("Empty Slot Not Found");
-            return new Ticket(TicketRepository.IdCount+1, vehicle, slot, floor);
+            Ticket ticket = new Ticket(TicketRepository.IdCount+1, VehicleRepository.GetVehicleByRegNum(regNum), slot, floor);
+            TicketRepository.Save(ticket);
+            return ticket.Id;
         }
         private float GetFinalAmount(Ticket ticket)
         {
@@ -63,7 +65,7 @@ namespace ParkingLot.Services
             }
             return ratePerHour * timeDiff.Hours;
         }
-        public bool UnParkVehicle(long ticketId)
+        public Vehicle UnParkVehicle(long ticketId)
         {
             Ticket? ticket = TicketRepository.GetTicketById(ticketId);
             if (ticket == null) throw new InvalidOperationException("Invalid TicketId");
@@ -76,7 +78,8 @@ namespace ParkingLot.Services
                 if (key == 'r') ticket.Payments.Add(PaymentService.MakePayment(ticket.GetUnpaidAmount()));
                 else break;
             }
-            return ticket.PaymentAllClear();
+            if (!ticket.PaymentAllClear()) throw new InvalidOperationException("Payment Incomplete");
+            return ticket.Vehicle;
         }
         public bool PaymentAllClear(long ticketId)
         {

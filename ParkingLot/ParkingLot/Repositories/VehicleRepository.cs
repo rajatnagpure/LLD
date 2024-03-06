@@ -18,6 +18,11 @@ namespace ParkingLot.Repositories
             if (!Vehicles.ContainsKey(id)) return null;
             return Vehicles[id];
         }
+
+        public Vehicle? GetVehicleByRegNum(string regNum)
+        {
+            return Vehicles.Values.FirstOrDefault(x => x.RegNum == regNum);
+        }
     }
 }
 

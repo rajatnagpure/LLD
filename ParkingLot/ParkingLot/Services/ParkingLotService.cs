@@ -23,7 +23,7 @@ namespace ParkingLot.Services
             floor.Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.BIKE));
             floor.Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.BIKE));
         }
-        public long CreateParkingLot(int mxSlots,int mxFloors, SlotFindingStrategyEnum slotFindingStrategyEnum)
+        public void CreateParkingLot(string stringId, int mxSlots,int mxFloors, SlotFindingStrategyEnum slotFindingStrategyEnum)
         {
             if (mxSlots < 4) throw new InvalidOperationException("Slots per floor cannot be less than 4");
             if (mxFloors < 1) throw new InvalidOperationException("Floors cannot be zero");
@@ -36,13 +36,13 @@ namespace ParkingLot.Services
                 InitialiseFloor(floor, mxSlots, slotIdCount++);
                 floors.Add(floor);
             }
-            Models.ParkingLot parkingLot = new Models.ParkingLot(ParkingLotRepository.IdCount+1,
+            Models.ParkingLot parkingLot = new Models.ParkingLot(stringId, ParkingLotRepository.IdCount+1,
                 mxSlots,
                 mxFloors,
                 SlotFindingStrategyFactory.getSlotFindingStrategy(slotFindingStrategyEnum), floors);
-            return ParkingLotRepository.Save(parkingLot);
+            ParkingLotRepository.Save(parkingLot);
         }
-        public Models.ParkingLot? GetParkingLot(long id)
+        public Models.ParkingLot? GetParkingLot(string id)
         {
             return ParkingLotRepository.GetParkingLotById(id);
         }
