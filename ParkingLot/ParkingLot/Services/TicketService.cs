@@ -42,6 +42,7 @@ namespace ParkingLot.Services
                 }
             }
             if (floor == null || slot == null) throw new InvalidOperationException("Empty Slot Not Found");
+            slot.FillSpot();
             Ticket ticket = new Ticket(TicketRepository.IdCount+1, VehicleRepository.GetVehicleByRegNum(regNum), slot, floor);
             TicketRepository.Save(ticket);
             return ticket.Id;
@@ -78,6 +79,7 @@ namespace ParkingLot.Services
                 if (key == 'r') ticket.Payments.Add(PaymentService.MakePayment(ticket.GetUnpaidAmount()));
                 else break;
             }
+            ticket.AllotedSlot.EmptySpot();
             if (!ticket.PaymentAllClear()) throw new InvalidOperationException("Payment Incomplete");
             return ticket.Vehicle;
         }

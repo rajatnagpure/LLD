@@ -14,7 +14,7 @@ namespace ParkingLot.Services
         public void InitialiseFloor(Floor floor, int numberOfslotsPerFloor, int slotStartingNumber)
         {
             numberOfslotsPerFloor -= 3;
-            while (numberOfslotsPerFloor < 0)
+            while (numberOfslotsPerFloor > 0)
             {
                 floor.Slots.Add(new Slot(slotStartingNumber++, VehicleTypeEnum.CAR));
                 numberOfslotsPerFloor--;

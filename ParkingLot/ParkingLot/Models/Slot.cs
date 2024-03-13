@@ -10,11 +10,11 @@ namespace ParkingLot.Models
             VehicleType = vehicleType;
             Filled = false;
         }
-        void FillSpot()
+        public void FillSpot()
         {
             Filled = true;
         }
-        void EmptySpot()
+        public void EmptySpot()
         {
             Filled = false;
         }
