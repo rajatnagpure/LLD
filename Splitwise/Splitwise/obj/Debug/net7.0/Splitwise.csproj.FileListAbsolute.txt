@@ -1,0 +1,15 @@
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/bin/Debug/net7.0/Splitwise
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/bin/Debug/net7.0/Splitwise.deps.json
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/bin/Debug/net7.0/Splitwise.runtimeconfig.json
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/bin/Debug/net7.0/Splitwise.dll
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/bin/Debug/net7.0/Splitwise.pdb
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.csproj.AssemblyReference.cache
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.AssemblyInfoInputs.cache
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.AssemblyInfo.cs
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.csproj.CoreCompileInputs.cache
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.dll
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/refint/Splitwise.dll
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.pdb
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/Splitwise.genruntimeconfig.cache
+/Users/rajatnagpure/Projects/LLD/Splitwise/Splitwise/obj/Debug/net7.0/ref/Splitwise.dll
