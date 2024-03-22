@@ -4,17 +4,27 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Splitwise/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Splitwise/Services/BalanceSheetService.cs">
     <Files>
-      <File FileName="Splitwise/Program.cs" Line="4" Column="1" />
+      <File FileName="Splitwise/Program.cs" Line="17" Column="1" />
+      <File FileName="Splitwise/Services/BalanceSheetService.cs" Line="70" Column="26" />
+      <File FileName="Splitwise/Services/UserService.cs" Line="11" Column="16" />
+      <File FileName="Splitwise/Repositories/UserRepository.cs" />
+      <File FileName="Splitwise/Repositories/BaseRepository.cs" />
+      <File FileName="Splitwise/Models/BalanceSheet.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Splitwise" expanded="True">
-            <Node name="Splitwise">
-              <Node name="Models" expanded="True">
-                <Node name="Repositories" selected="True" />
+          <Node name="Splitwise">
+            <Node name="Splitwise" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BalanceSheetService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,6 +35,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Splitwise PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Splitwise PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

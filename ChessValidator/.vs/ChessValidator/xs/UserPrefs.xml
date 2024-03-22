@@ -1,0 +1,53 @@
+﻿<Properties StartupConfiguration="{F2C51747-A848-44EA-AC8E-18E753705288}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ChessValidator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChessValidator/Models/Game.cs">
+    <Files>
+      <File FileName="ChessValidator/Program.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Models/Board.cs" Line="72" Column="2" />
+      <File FileName="ChessValidator/Strategies/MoveStrategyTypeEnum.cs" Line="11" Column="13" />
+      <File FileName="ChessValidator/Strategies/PieceTypeEnum.cs" Line="11" Column="1" />
+      <File FileName="ChessValidator/Models/Position.cs" Line="15" Column="14" />
+      <File FileName="ChessValidator/Models/PieceTypeEnum.cs" Line="1" Column="38" />
+      <File FileName="ChessValidator/Models/MoveStrategyTypeEnum.cs" Line="10" Column="9" />
+      <File FileName="ChessValidator/Models/Piece.cs" Line="5" Column="23" />
+      <File FileName="ChessValidator/Models/Cell.cs" Line="11" Column="36" />
+      <File FileName="ChessValidator/Strategies/MovingStrategyInterface.cs" Line="7" Column="83" />
+      <File FileName="ChessValidator/Strategies/KingMoveStrategy.cs" Line="12" Column="2" />
+      <File FileName="ChessValidator/Strategies/PawnMoveStrategy.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Strategies/KnightMoveStrategy.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Strategies/BishopMoveStrategy.cs" Line="10" Column="10" />
+      <File FileName="ChessValidator/Strategies/QueenMoveStrategy.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/MoveValidatorInterface.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/BishopMoveValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/RookMoveValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/KnightMoveValidator.cs" Line="14" Column="1" />
+      <File FileName="ChessValidator/Validators/PawnMoveValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/KingMoveValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/QueenMoveValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/CheckValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/CheckMateValidator.cs" Line="1" Column="1" />
+      <File FileName="ChessValidator/Validators/ValidatorMaster.cs" Line="11" Column="1" />
+      <File FileName="ChessValidator/Models/Game.cs" Line="26" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ChessValidator" expanded="True">
+            <Node name="ChessValidator">
+              <Node name="Enumerations" expanded="True" />
+              <Node name="Models">
+                <Node name="Game.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

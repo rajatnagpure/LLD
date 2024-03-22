@@ -1,0 +1,15 @@
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/bin/Debug/net7.0/ChessValidator
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/bin/Debug/net7.0/ChessValidator.deps.json
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/bin/Debug/net7.0/ChessValidator.runtimeconfig.json
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/bin/Debug/net7.0/ChessValidator.dll
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/bin/Debug/net7.0/ChessValidator.pdb
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.csproj.AssemblyReference.cache
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.AssemblyInfoInputs.cache
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.AssemblyInfo.cs
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.csproj.CoreCompileInputs.cache
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.dll
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/refint/ChessValidator.dll
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.pdb
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ChessValidator.genruntimeconfig.cache
+/Users/rajatnagpure/Projects/LLD/ChessValidator/ChessValidator/obj/Debug/net7.0/ref/ChessValidator.dll
