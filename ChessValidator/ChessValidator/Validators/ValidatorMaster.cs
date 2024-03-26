@@ -1,8 +1,7 @@
 ﻿using ChessValidator.Enumerations;
 using ChessValidator.Models;
-using ChessValidator.Validators;
 
-namespace ChessValidator
+namespace ChessValidator.Validators
 {
     public class ValidatorMaster
     {

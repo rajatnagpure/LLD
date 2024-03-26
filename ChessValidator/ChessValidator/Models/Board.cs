@@ -62,7 +62,7 @@ namespace ChessValidator.Models
         public void Display()
         {
             string final = "";
-            string temp = "";
+            string temp;
             for (int row = 0; row < 8; row++)
             {
                 temp = "";
