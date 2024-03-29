@@ -28,10 +28,6 @@ namespace ChessValidator.Validators
             if (endPos.row - startPos.row > maxMoveRows)
                 return false;
 
-            // Check if the end position is empty
-            if (!board.cells[endPos.row, endPos.col].IsCellEmpty())
-                return false;
-
             // Check if the pawn is moving diagonally to capture an opponent's piece
             if (endPos.col != startPos.col)
             {
@@ -45,6 +41,10 @@ namespace ChessValidator.Validators
 
                 return true; // Valid pawn capture move
             }
+
+            // Check if the end position is empty
+            if (!board.cells[endPos.row, endPos.col].IsCellEmpty())
+                return false;
 
             return true; // Valid pawn move
         }

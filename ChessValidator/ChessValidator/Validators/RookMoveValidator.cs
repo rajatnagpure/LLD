@@ -40,7 +40,11 @@ namespace ChessValidator.Validators
                         return false; // Path is not clear if any intermediate cell is occupied
                 }
             }
-
+            // Capturing Same color is not a valid move
+            if (!board.cells[endPos.row, endPos.col].IsCellEmpty()
+                && board.cells[endPos.row, endPos.col].piece?.pieceColor
+                == board.cells[startPos.row, startPos.col].piece?.pieceColor)
+                return false;
             return true; // Path is clear
         }
     }

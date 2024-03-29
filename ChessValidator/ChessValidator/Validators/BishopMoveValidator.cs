@@ -30,7 +30,11 @@ namespace ChessValidator.Validators
                 currentRow += rowDirection;
                 currentCol += colDirection;
             }
-
+            // Capturing same color is invalid
+            if (!board.cells[endPos.row, endPos.col].IsCellEmpty()
+                && board.cells[endPos.row, endPos.col].piece?.pieceColor
+                == board.cells[startPos.row, startPos.col].piece?.pieceColor)
+                return false;
             return true; // Path is clear
         }
     }

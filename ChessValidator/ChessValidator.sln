@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessValidator", "ChessValidator\ChessValidator.csproj", "{F2C51747-A848-44EA-AC8E-18E753705288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessValidatorTest", "ChessValidatorTest\ChessValidatorTest.csproj", "{87851C42-EF66-4308-976F-53E07598173A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F2C51747-A848-44EA-AC8E-18E753705288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C51747-A848-44EA-AC8E-18E753705288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C51747-A848-44EA-AC8E-18E753705288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87851C42-EF66-4308-976F-53E07598173A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87851C42-EF66-4308-976F-53E07598173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87851C42-EF66-4308-976F-53E07598173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87851C42-EF66-4308-976F-53E07598173A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
