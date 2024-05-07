@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{350476D6-8400-4ACB-9D03-8174F49A1849}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LibraryManagementSystem PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryManagementSystem/Program.cs">
+    <Files>
+      <File FileName="LibraryManagementSystem/Services/BookService.cs" Line="20" Column="10" />
+      <File FileName="LibraryManagementSystem/Controllers/BookController.cs" Line="11" Column="10" />
+      <File FileName="LibraryManagementSystem/Services/UserService.cs" Line="1" Column="1" />
+      <File FileName="LibraryManagementSystem/Repositories/BaseRepository.cs" Line="25" Column="18" />
+      <File FileName="LibraryManagementSystem/Services/LibraryService.cs" Line="1" Column="1" />
+      <File FileName="LibraryManagementSystem/Services/BorrowService.cs" Line="35" Column="48" />
+      <File FileName="LibraryManagementSystem/Models/User.cs" Line="1" Column="1" />
+      <File FileName="LibraryManagementSystem/Controllers/BorrowController.cs" Line="1" Column="1" />
+      <File FileName="LibraryManagementSystem/Controllers/UserController.cs" Line="32" Column="14" />
+      <File FileName="LibraryManagementSystem/Controllers/LibraryController.cs" Line="28" Column="13" />
+      <File FileName="LibraryManagementSystem/Startup.cs" Line="7" Column="25" />
+      <File FileName="LibraryManagementSystem/Program.cs" Line="20" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LibraryManagementSystem" expanded="True">
+            <Node name="LibraryManagementSystem">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -1,35 +1,39 @@
 ﻿<Properties StartupConfiguration="{F2C51747-A848-44EA-AC8E-18E753705288}|Default">
-  <MonoDevelop.Ide.ItemProperties.ChessValidatorTest FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.ChessValidator PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChessValidator/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChessValidatorTest/Tests/QueenValidatorTests.cs">
     <Files>
-      <File FileName="ChessValidator/Services/GameService.cs" Line="35" Column="78" />
-      <File FileName="ChessValidator/Controllers/GameController.cs" Line="48" Column="56" />
-      <File FileName="ChessValidator/Models/Board.cs" Line="1" Column="1" />
-      <File FileName="ChessValidator/Services/ValidatorService.cs" Line="8" Column="6" />
-      <File FileName="ChessValidator/Models/Game.cs" Line="1" Column="1" />
-      <File FileName="ChessValidator/Startup.cs" Line="16" Column="24" />
-      <File FileName="ChessValidator/Validators/ValidatorMaster.cs" Line="1" Column="1" />
-      <File FileName="ChessValidator/Program.cs" Line="20" Column="13" />
+      <File FileName="ChessValidatorTest/Tests/RookValidatorTests.cs" Line="4" Column="29" />
+      <File FileName="ChessValidatorTest/Tests/KnightValidatorTests.cs" Line="20" Column="58" />
+      <File FileName="ChessValidatorTest/Tests/BishopValidatorTests.cs" Line="4" Column="35" />
+      <File FileName="ChessValidatorTest/Tests/PawnValidatorTests.cs" Line="42" Column="9" />
+      <File FileName="ChessValidatorTest/Tests/QueenValidatorTests.cs" Line="18" Column="39" />
+      <File FileName="ChessValidator/Validators/QueenMoveValidator.cs" Line="10" Column="29" />
+      <File FileName="ChessValidator/Validators/RookMoveValidator.cs" Line="43" Column="56" />
+      <File FileName="ChessValidator/Validators/KnightMoveValidator.cs" Line="12" Column="13" />
+      <File FileName="ChessValidator/Validators/BishopMoveValidator.cs" Line="28" Column="28" />
+      <File FileName="ChessValidator/Validators/KingMoveValidator.cs" Line="16" Column="30" />
+      <File FileName="ChessValidatorTest/Tests/KingValidatorTests.cs" Line="15" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ChessValidator" expanded="True">
-            <Node name="ChessValidator" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Enumerations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="Validators" expanded="True" />
+            <Node name="ChessValidator" expanded="True" />
+            <Node name="ChessValidatorTest" expanded="True">
+              <Node name="Tests" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__" />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
